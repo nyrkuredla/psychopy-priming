@@ -1,0 +1,626 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.83.04">
+  <Settings>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1366, 768]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{u'session': u'001', u'participant': u''}" valType="code"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="familiarity_pretest_ENG" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="instructions_final">
+      <TextComponent name="text_4">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you! Dziekujemy!&amp;#10;&amp;#10;Aby zakonczyc, nacisnij spacje." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions2">
+      <KeyboardComponent name="key_resp_5">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Teraz na ekranie pojawi się słowo po polsku i jego dwie definicje. Twoim zadaniem będzie wskazać tę właściwą. W tym celu naciśnij:&amp;#10;- klawisz '1', jeśli uważasz, że poprawna jest definicja pierwsza;&amp;#10;- klawisz '2', jeśli uważasz, że poprawna jest definicja druga.&amp;#10;Właściwy eksperyment poprzedzi sesja treningowa, w czasie której będziesz mieć okazję poćwiczyć.&amp;#10;Aby przejść do sesji treningowej, prosimy nacisnąć spację.&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="trial2">
+      <TextComponent name="target_POL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_POL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$word_POL" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="ans_POL">
+        <Param name="correctAns" updates="constant" val="$correct_ans_POL" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="ans_POL" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1','2'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="target_POL_defA">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_POL_defA" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'1: %s' % $A_POL" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.1]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="target_POL_defB">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_POL_defB" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$'2: %s' % $B_POL" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="training_session1">
+      <TextComponent name="word_ENG_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="word_ENG_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$word_ENG_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_7">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_7" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1', '2'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="defA_ENG_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="defA_ENG_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'1: %s' % $defA_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.1]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="defB_ENG_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="defB_ENG_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'2: %s' % $defB_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="training_session2">
+      <TextComponent name="word_POL_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="word_POL_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$word_POL_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_6">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_6" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1','2'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="defA_PL_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="defA_PL_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'1: %s' % $defA_POL_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.1]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="defB_PL_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="defB_PL_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'2: %s' % $defB_POL_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instructions2b">
+      <TextComponent name="text_6">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_6" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Sesja treningowa dobiegła końca. Aby rozpocząć eksperyment prosimy nacisnąć spację." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_8">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_8" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="trial">
+      <TextComponent name="target_ENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_ENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$word_ENG" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="ans_ENG">
+        <Param name="correctAns" updates="constant" val="$correct_ans_ENG" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="ans_ENG" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1','2'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="store" updates="constant" val="all keys" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="target_ENG_defA">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_ENG_defA" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'1: %s' % $defA_ENG" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.1]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="target_ENG_defB">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="target_ENG_defB" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="'2: %s' % $defB_ENG" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instructions1b">
+      <TextComponent name="text_7">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_7" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you! The English training session is over. &amp;#10;&amp;#10;Now we will begin the experiment. Please feel free to ask any questions at this time, or press SPACE to continue when you are ready." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_10">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_10" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Hello! Thank you for participating in this test. We will begin with a practice session and trials in English, followed by practice and trials in Polish. If you have any questions during the practice sessions, please feel free to ask.&amp;#10;&amp;#10;On the screen, you will see a word followed by two definitions: 1 and 2. Please use the 1 and 2 number keys in the upper-left corner of the keyboard to indicate which definition is correct. Try to answer the questions as quickly as possible. &amp;#10;&amp;#10;If you are ready to continue, press SPACE." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="training_session">
+      <KeyboardComponent name="key_resp_4">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1','2'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Any text&amp;#10;&amp;#10;including line breaks" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="practice_ENG">
+      <Param name="conditionsFile" updates="None" val="practice_ENGPOL.csv" valType="str"/>
+      <Param name="name" updates="None" val="practice_ENG" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'value_defB_POL_prac': False, 'defA_POL_prac': u'Upadek warto\u015bci moralnych, spo\u0142ecznych lub kulturowych.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Odci\u0119cie g\u0142owy podczas egzekucji lub wypadku.', 'word_POL_prac': u'dekadencja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'A jet plane designed to fly very high.', 'word_ENG_prac': u'skyscraper', 'value_defB_ENG_prac': 1, 'defB_prac': u'A very tall building located in a city.'}, {'value_defB_POL_prac': True, 'defA_POL_prac': u'Cz\u0142owiek dotkliwie odczuwaj\u0105cy wszelkie zmiany pogodowe.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': False, 'key_defA_POL': u'right', 'defB_POL_prac': u'M\u0119\u017cczyzna odczuwaj\u0105cy g\u0142\u0119bok\u0105 niech\u0119\u0107 do kobiet.', 'word_POL_prac': u'mizogin', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 1, 'defA_prac': u'Colorful liquid and powder worn on the face.', 'word_ENG_prac': u'makeup', 'value_defB_ENG_prac': 2, 'defB_prac': u'Instructions for building furniture or other household items.'}, {'value_defB_POL_prac': False, 'defA_POL_prac': u'Ideologia g\u0142osz\u0105ca zniesienie wszelkiej warto\u015bci prywatnej.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Wsp\xf3lne rz\u0105dy partii o odmiennych pogl\u0105dach.', 'word_POL_prac': u'komunizm', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'A person who has never played a game.', 'word_ENG_prac': u'newborn', 'value_defB_ENG_prac': 1, 'defB_prac': u'A very young baby who was just born.'}, {'value_defB_POL_prac': True, 'defA_POL_prac': u'Rozpad cz\u0105stki zwi\u0105zku chemicznego lub pierwiastka.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': False, 'key_defA_POL': u'right', 'defB_POL_prac': u'Zesp\xf3\u0142 symptom\xf3w zwi\u0105zany ze s\u0142ab\u0105 pami\u0119ci\u0105.', 'word_POL_prac': u'demencja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 1, 'defA_prac': u'A national identification document which permits international travel.', 'word_ENG_prac': u'passport', 'value_defB_ENG_prac': 2, 'defB_prac': u'A government organization which approves ocean-based trade.'}, {'value_defB_POL_prac': False, 'defA_POL_prac': u'Proces przemieszczania si\u0119 obiekt\xf3w w przestrzeni.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Nabywanie produkt\xf3w w telesklepach lub Internecie.', 'word_POL_prac': u'teleportacja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'The basements and underground areas in a city.', 'word_ENG_prac': u'downtown', 'value_defB_ENG_prac': 1, 'defB_prac': u'The business or entertainment district in a city.'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="training_session1"/>
+    <LoopTerminator name="practice_ENG"/>
+    <Routine name="instructions1b"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_ENG">
+      <Param name="conditionsFile" updates="None" val="compound_list_psychopy.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials_ENG" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'A_POL': u'kto\u015b kto stale si\u0119 czym\u015b chwali', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A severe burn on the hand or arm.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small gun carried by police or soldiers.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto lubi podlizywa\u0107 si\u0119 innym', 'value_defB_POL': False, 'word_POL': u'chwalipi\u0119ta', 'word_ENG': u'firearm'}, {'A_POL': u'kto\u015b kto zbyt cz\u0119sto si\u0119 awanturuje', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A skin lotion used on hot sunny days.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A large window cover used in a car.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest ci\u0105gle w ruchu', 'value_defB_POL': True, 'word_POL': u'p\u0119dziwiatr', 'word_ENG': u'sunscreen'}, {'A_POL': u'kto\u015b kto du\u017co podr\xf3\u017cuje po \u015bwiecie', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A person repairing copy machines in an office.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A person who uses unoriginal work at school.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ma trudno\u015bci z chodzeniem', 'value_defB_POL': False, 'word_POL': u'w\u0142\xf3czykij', 'word_ENG': u'copycat'}, {'A_POL': u'kto\u015b kto zas\u0142u\u017cy\u0142 na wieczne pot\u0119pienie', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Land with farms and villages outside the city.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Law which is applied at a national level.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto du\u017co i cz\u0119sto narzeka', 'value_defB_POL': True, 'word_POL': u'm\u0119czydusza', 'word_ENG': u'countryside'}, {'A_POL': u'kto\u015b kto nie potrafi siedzie\u0107 spokojnie', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small musical instrument played with a stick.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small, important part of the inner ear.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto zbyt ch\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': False, 'word_POL': u'wiercipi\u0119ta', 'word_ENG': u'eardrum'}, {'A_POL': u'kto\u015b kto jest przebieg\u0142y i podst\u0119pny', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A process or tool which is highly recommended.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Marks on paper used for drawing or mapping.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest chciwy i sk\u0105py', 'value_defB_POL': True, 'word_POL': u'liczykrupa', 'word_ENG': u'guideline'}, {'A_POL': u'kto\u015b kto cz\u0119sto nadu\u017cywa alkoholu, pijak', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A device for serving afternoon tea and cake.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Storage for dishes and food in a kitchen.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b serdeczny i towarzyski, doskona\u0142y kompan', 'value_defB_POL': False, 'word_POL': u'moczymorda', 'word_ENG': u'cupboard'}, {'A_POL': u'kto\u015b postrzelony, kto zachowuje si\u0119 lekkomy\u015blnie', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A frightening dream which often occurs at night.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A black or dark-colored adult female horse.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ma pot\u0119\u017cn\u0105 budow\u0119 cia\u0142a', 'value_defB_POL': True, 'word_POL': u'walig\xf3ra', 'word_ENG': u'nightmare'}, {'A_POL': u'kto\u015b kto narzeka, zanudza innych k\u0142opotami', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A liar or dishonest person in an organization.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A book with soft covers of laminated paper.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto fa\u0142szuje, jest pozbawiony s\u0142uchu', 'value_defB_POL': False, 'word_POL': u'j\u0119czydusza', 'word_ENG': u'paperback'}, {'A_POL': u'kto\u015b kto wszystko niszczy, wprowadza chaos', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The music which is played with a film.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A colored graph which shows noise volume levels.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto doszukuje si\u0119 wsz\u0119dzie wad', 'value_defB_POL': True, 'word_POL': u'burczymucha', 'word_ENG': u'soundtrack'}, {'A_POL': u'kto\u015b kto sieje zam\u0119t, m\u0105ci, pod\u017cega', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A dangerous or reckless driver on a highway.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A hand tool often used in basic woodworking.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b pozbawiony zdolno\u015bci kulinarnych, fatalny kucharz', 'value_defB_POL': False, 'word_POL': u'm\u0105ciwoda', 'word_ENG': u'screwdriver'}, {'A_POL': u'kto\u015b posiadaj\u0105cy nadprzyrodzone moce, uzdrowiciel, szaman', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Someone who is paid to look after children.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u&quot;A child who isn't allowed to leave home.&quot;, 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b porywczy i lekkomy\u015blny, cz\u0142owiek nerwowy', 'value_defB_POL': True, 'word_POL': u'paliwoda', 'word_ENG': u'babysitter'}, {'A_POL': u'kto\u015b kto tyranizuje swoich podw\u0142adnych', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Heavy rain which only occurs in the evening.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A color spectrum appearing in light and water.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b jednocze\u015bnie bardzo brzydki i nieuprzejmy', 'value_defB_POL': False, 'word_POL': u'dzier\u017cymorda', 'word_ENG': u'rainbow'}, {'A_POL': u'kto\u015b kto bardzo rozs\u0105dnie gospodaruje pieni\u0119dzmi', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Something which repels water and cannot become wet.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Something which is not provable, or perhaps impossible.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo niech\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'dusigrosz', 'word_ENG': u'waterproof'}, {'A_POL': u'kto\u015b kto sp\u0119dza czas na hulankach', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A device for telling time in an office.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A regular, posted schedule of trains or buses.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto robi innym na z\u0142o\u015b\u0107', 'value_defB_POL': False, 'word_POL': u'hulajdusza', 'word_ENG': u'timetable'}, {'A_POL': u'kto\u015b sumienny, na kim mo\u017cna polega\u0107', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A dish which is used for old cigarettes.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A metal plate traditionally placed inside an oven.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b chciwy i sk\u0105py, dusigrosz, sknera', 'value_defB_POL': True, 'word_POL': u'liczygrosz', 'word_ENG': u'ashtray'}, {'A_POL': u'kto\u015b bior\u0105cy bardzo wysokie ceny, zdzierca', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Someone who does not often go to church.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Someone who does extreme sports or risky activities.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b brutalny, kto dopuszcza przemoc fizyczn\u0105', 'value_defB_POL': False, 'word_POL': u'\u0142upisk\xf3ra', 'word_ENG': u'daredevil'}, {'A_POL': u'kto\u015b kto du\u017co m\xf3wi, gadu\u0142a, papla', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small device used for listening to music.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A small telephone which fits in the ear.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto cz\u0119sto nadu\u017cywa alkoholu; pijak', 'value_defB_POL': True, 'word_POL': u'moczyg\u0119ba', 'word_ENG': u'earphone'}, {'A_POL': u'kto\u015b kto nie lubi pracowa\u0107, le\u0144', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Clothes storage which is placed in a hallway.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A set of stairs going up or down.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto cz\u0119sto ulega wypadkom, niezdara', 'value_defB_POL': False, 'word_POL': u'obibok', 'word_ENG': u'staircase'}, {'A_POL': u'kto\u015b kto ma k\u0142opoty z prawem', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small and colorful explosion used for celebrations.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A very successful or popular book for teenagers.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo powoli prowadzi samoch\xf3d', 'value_defB_POL': True, 'word_POL': u'zawalidroga', 'word_ENG': u'firework'}, {'A_POL': u'kto\u015b kto lubi podr\xf3\u017cowa\u0107 po \u015bwiecie', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A gun which is shot quickly and recklessly.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A photograph which is usually taken very quickly.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b szalony, kto ma wiele pomys\u0142\xf3w', 'value_defB_POL': False, 'word_POL': u'obie\u017cy\u015bwiat', 'word_ENG': u'snapshot'}, {'A_POL': u'kto\u015b obdzieraj\u0105cy martwe zwierz\u0119ta ze sk\xf3ry', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A picture which is taken with a camera.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A chart which measures light from the sun.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto chce zarobi\u0107 czyim\u015b kosztem', 'value_defB_POL': True, 'word_POL': u'odrzysk\xf3ra', 'word_ENG': u'photograph'}, {'A_POL': u'kto\u015b my\u015bl\u0105cy jedynie o jedzeniu, \u017car\u0142ok', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A part of the ocean near a volcano.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A long weather pattern of unusually high temperatures.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto pracuje przy wypasie owiec', 'value_defB_POL': False, 'word_POL': u'pasibrzuch', 'word_ENG': u'heatwave'}, {'A_POL': u'kto\u015b lekkomy\u015blny, kto dzia\u0142a bez zastanowienia', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A place where planes take off and land.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A place where chemicals and gases are traded.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto kiepsko gra na gitarze', 'value_defB_POL': True, 'word_POL': u'szarpidrut', 'word_ENG': u'airport'}, {'A_POL': u'kto\u015b kto prowadzi zabaw\u0119 na przyj\u0119ciu', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A place where cars are available for hire.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Riding in a car to work with colleagues.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b szybki, kto prowadzi w wy\u015bcigu', 'value_defB_POL': False, 'word_POL': u'wodzirej', 'word_ENG': u'carpool'}, {'A_POL': u'kto\u015b zblazowany, kto lekcewa\u017cy cudz\u0105 pomoc', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Organized information which is used by a computer.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A guarded compound storing top secret military information.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto wy\u0142udza od innych pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'wydrwigrosz', 'word_ENG': u'database'}, {'A_POL': u'kto\u015b kto stroni od wydawania pieni\u0119dzy', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Food which is made for professional race horses.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Ground oats which are mixed with hot water.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b bardzo wychudzony, o szczup\u0142ej sylwetce', 'value_defB_POL': False, 'word_POL': u'sk\u0105pirad\u0142o', 'word_ENG': u'oatmeal'}, {'A_POL': u'kto\u015b kto zajmuje si\u0119 wycink\u0105 drzew', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u&quot;A person's perspective, opinion, or way of thinking.&quot;, 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A popular sightseeing destination that is often recommended.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b o wielkiej, nadludzkiej sile, olbrzym', 'value_defB_POL': True, 'word_POL': u'wyrwid\u0105b', 'word_ENG': u'viewpoint'}, {'A_POL': u'kto\u015b kto lubi zabawia\u0107 kobiety, flirciarz', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small organization which arranges temporary work assignments.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A place where artists create and sell objects.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest dobrze wychowany, wytworny', 'value_defB_POL': False, 'word_POL': u'bawidamek', 'word_ENG': u'workshop'}, {'A_POL': u'kto\u015b kto jest dobrze zbudowany, olbrzym', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The number of workers or employees a business has.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'The amount of power an engine can produce.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ci\u0105gle p\u0142acze, najcz\u0119\u015bciej dziecko', 'value_defB_POL': True, 'word_POL': u'ryczyw\xf3\u0142', 'word_ENG': u'workforce'}, {'A_POL': u'kto\u015b kto lubi zabawia\u0107 kobiety, flirciarz', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A recommendation about mental health from a psychiatrist.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'People, drugs and jobs in the medical industry.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b blady, chorowity, pozbawiony si\u0142y fizycznej', 'value_defB_POL': False, 'word_POL': u'bawibia\u0142ek', 'word_ENG': u'healthcare'}, {'A_POL': u'kto\u015b bardzo religijny i bogobojny, bigot', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small, light computer which can be carried.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A desk which is designed for an armchair.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto stale si\u0119 czym\u015b chwali', 'value_defB_POL': True, 'word_POL': u'chwalib\xf3g', 'word_ENG': u'laptop'}, {'A_POL': u'kto\u015b kto cz\u0119sto dokucza innym ludziom', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small space where children can play safely.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A colorful pen often used by young children.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b o wielkich, dobrze widocznych z\u0119bach', 'value_defB_POL': False, 'word_POL': u'gryzimol', 'word_ENG': u'playpen'}, {'A_POL': u'kto\u015b skrupulatny i zawsze dobrze zorganizowany', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The sandy or rocky area next to a river.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'The estimated number of fish in a river.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo niech\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'liczymieszek', 'word_ENG': u'riverbank'}, {'A_POL': u'kto\u015b kto zam\u0119cza innych, cz\u0119sto przynudza', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A large wave which occurs in a storm.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Shops and restaurants which are near the beach.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b niem\u0105dry, kto nie rozumie wiele', 'value_defB_POL': False, 'word_POL': u'm\u0119czyw\xf3\u0142', 'word_ENG': u'waterfront'}, {'A_POL': u'kto\u015b kto nigdy nie zdradza tajemnic', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'An exercise machine used for walking indoors.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A device which accurately measures daily distance walked.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b ma\u0142om\xf3wny, kto niech\u0119tnie si\u0119 odzywa', 'value_defB_POL': True, 'word_POL': u'milczymorda', 'word_ENG': u'treadmill'}, {'A_POL': u'kto\u015b kto bardzo du\u017co si\u0119 przechwala', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small boat used for tourists and whale-watchers.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small town or village near the ocean.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto nie potrzebuje pieni\u0119dzy, pustelnik', 'value_defB_POL': False, 'word_POL': u'chwalibieda', 'word_ENG': u'seaside'}, {'A_POL': u'kto\u015b bardzo niesamodzielny, uzale\u017cniony od innych', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A glass window on the front of a car.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A ceramic plate used on rockets and jets.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto wszystkiego si\u0119 boi, tch\xf3rz', 'value_defB_POL': True, 'word_POL': u'trz\u0119siportek', 'word_ENG': u'windshield'}, {'A_POL': u'kto\u015b kto cz\u0119sto pije du\u017co alkoholu', 'correct_ans_ENG': 2, 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'The bright lights which tell an airplane where to land.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A popular or well-known monument or building.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b rubaszny, niezwracaj\u0105cy uwagi na maniery', 'value_defB_POL': False, 'word_POL': u'moczyw\u0105s', 'word_ENG': u'landmark'}, {'A_POL': u'kto\u015b sprowadzaj\u0105cy innych na z\u0142\u0105 drog', 'correct_ans_ENG': 1, 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Wooden decoration on walls and doors in a house.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Boring work which is also useless or unnecessary.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b \u0142akomy na wszystko, bardzo chciwy', 'value_defB_POL': True, 'word_POL': u'\u0142apidusza', 'word_ENG': u'woodwork'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_ENG"/>
+    <Routine name="instructions2"/>
+    <LoopInitiator loopType="TrialHandler" name="practice_POL">
+      <Param name="conditionsFile" updates="None" val="practice_ENGPOL.csv" valType="str"/>
+      <Param name="name" updates="None" val="practice_POL" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'value_defB_POL_prac': False, 'defA_POL_prac': u'Upadek warto\u015bci moralnych, spo\u0142ecznych lub kulturowych.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Odci\u0119cie g\u0142owy podczas egzekucji lub wypadku.', 'word_POL_prac': u'dekadencja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'A jet plane designed to fly very high.', 'word_ENG_prac': u'skyscraper', 'value_defB_ENG_prac': 1, 'defB_prac': u'A very tall building located in a city.'}, {'value_defB_POL_prac': True, 'defA_POL_prac': u'Cz\u0142owiek dotkliwie odczuwaj\u0105cy wszelkie zmiany pogodowe.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': False, 'key_defA_POL': u'right', 'defB_POL_prac': u'M\u0119\u017cczyzna odczuwaj\u0105cy g\u0142\u0119bok\u0105 niech\u0119\u0107 do kobiet.', 'word_POL_prac': u'mizogin', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 1, 'defA_prac': u'Colorful liquid and powder worn on the face.', 'word_ENG_prac': u'makeup', 'value_defB_ENG_prac': 2, 'defB_prac': u'Instructions for building furniture or other household items.'}, {'value_defB_POL_prac': False, 'defA_POL_prac': u'Ideologia g\u0142osz\u0105ca zniesienie wszelkiej warto\u015bci prywatnej.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Wsp\xf3lne rz\u0105dy partii o odmiennych pogl\u0105dach.', 'word_POL_prac': u'komunizm', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'A person who has never played a game.', 'word_ENG_prac': u'newborn', 'value_defB_ENG_prac': 1, 'defB_prac': u'A very young baby who was just born.'}, {'value_defB_POL_prac': True, 'defA_POL_prac': u'Rozpad cz\u0105stki zwi\u0105zku chemicznego lub pierwiastka.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': False, 'key_defA_POL': u'right', 'defB_POL_prac': u'Zesp\xf3\u0142 symptom\xf3w zwi\u0105zany ze s\u0142ab\u0105 pami\u0119ci\u0105.', 'word_POL_prac': u'demencja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 1, 'defA_prac': u'A national identification document which permits international travel.', 'word_ENG_prac': u'passport', 'value_defB_ENG_prac': 2, 'defB_prac': u'A government organization which approves ocean-based trade.'}, {'value_defB_POL_prac': False, 'defA_POL_prac': u'Proces przemieszczania si\u0119 obiekt\xf3w w przestrzeni.', 'key_defB_ENG_prac': u'right', 'value_defA_POL': True, 'key_defA_POL': u'right', 'defB_POL_prac': u'Nabywanie produkt\xf3w w telesklepach lub Internecie.', 'word_POL_prac': u'teleportacja', 'key_defA_ENG_prac': u'left', 'key_defB_POL_prac': u'left', 'value_defA_ENG_prac': 2, 'defA_prac': u'The basements and underground areas in a city.', 'word_ENG_prac': u'downtown', 'value_defB_ENG_prac': 1, 'defB_prac': u'The business or entertainment district in a city.'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="training_session2"/>
+    <LoopTerminator name="practice_POL"/>
+    <Routine name="instructions2b"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_POL">
+      <Param name="conditionsFile" updates="None" val="compound_list_psychopy.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials_POL" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'correctENG': 2, 'A_POL': u'kto\u015b kto stale si\u0119 czym\u015b chwali', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A severe burn on the hand or arm.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small gun carried by police or soldiers.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto lubi podlizywa\u0107 si\u0119 innym', 'value_defB_POL': False, 'word_POL': u'chwalipi\u0119ta', 'word_ENG': u'firearm'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto zbyt cz\u0119sto si\u0119 awanturuje', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A skin lotion used on hot sunny days.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A large window cover used in a car.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest ci\u0105gle w ruchu', 'value_defB_POL': True, 'word_POL': u'p\u0119dziwiatr', 'word_ENG': u'sunscreen'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto du\u017co podr\xf3\u017cuje po \u015bwiecie', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A person repairing copy machines in an office.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A person who uses unoriginal work at school.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ma trudno\u015bci z chodzeniem', 'value_defB_POL': False, 'word_POL': u'w\u0142\xf3czykij', 'word_ENG': u'copycat'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto zas\u0142u\u017cy\u0142 na wieczne pot\u0119pienie', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Land with farms and villages outside the city.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Law which is applied at a national level.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto du\u017co i cz\u0119sto narzeka', 'value_defB_POL': True, 'word_POL': u'm\u0119czydusza', 'word_ENG': u'countryside'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto nie potrafi siedzie\u0107 spokojnie', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small musical instrument played with a stick.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small, important part of the inner ear.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto zbyt ch\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': False, 'word_POL': u'wiercipi\u0119ta', 'word_ENG': u'eardrum'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto jest przebieg\u0142y i podst\u0119pny', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A process or tool which is highly recommended.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Marks on paper used for drawing or mapping.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest chciwy i sk\u0105py', 'value_defB_POL': True, 'word_POL': u'liczykrupa', 'word_ENG': u'guideline'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto cz\u0119sto nadu\u017cywa alkoholu, pijak', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A device for serving afternoon tea and cake.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Storage for dishes and food in a kitchen.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b serdeczny i towarzyski, doskona\u0142y kompan', 'value_defB_POL': False, 'word_POL': u'moczymorda', 'word_ENG': u'cupboard'}, {'correctENG': 1, 'A_POL': u'kto\u015b postrzelony, kto zachowuje si\u0119 lekkomy\u015blnie', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A frightening dream which often occurs at night.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A black or dark-colored adult female horse.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ma pot\u0119\u017cn\u0105 budow\u0119 cia\u0142a', 'value_defB_POL': True, 'word_POL': u'walig\xf3ra', 'word_ENG': u'nightmare'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto narzeka, zanudza innych k\u0142opotami', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A liar or dishonest person in an organization.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A book with soft covers of laminated paper.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto fa\u0142szuje, jest pozbawiony s\u0142uchu', 'value_defB_POL': False, 'word_POL': u'j\u0119czydusza', 'word_ENG': u'paperback'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto wszystko niszczy, wprowadza chaos', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The music which is played with a film.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A colored graph which shows noise volume levels.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto doszukuje si\u0119 wsz\u0119dzie wad', 'value_defB_POL': True, 'word_POL': u'burczymucha', 'word_ENG': u'soundtrack'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto sieje zam\u0119t, m\u0105ci, pod\u017cega', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A dangerous or reckless driver on a highway.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A hand tool often used in basic woodworking.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b pozbawiony zdolno\u015bci kulinarnych, fatalny kucharz', 'value_defB_POL': False, 'word_POL': u'm\u0105ciwoda', 'word_ENG': u'screwdriver'}, {'correctENG': 1, 'A_POL': u'kto\u015b posiadaj\u0105cy nadprzyrodzone moce, uzdrowiciel, szaman', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Someone who is paid to look after children.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u&quot;A child who isn't allowed to leave home.&quot;, 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b porywczy i lekkomy\u015blny, cz\u0142owiek nerwowy', 'value_defB_POL': True, 'word_POL': u'paliwoda', 'word_ENG': u'babysitter'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto tyranizuje swoich podw\u0142adnych', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Heavy rain which only occurs in the evening.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A color spectrum appearing in light and water.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b jednocze\u015bnie bardzo brzydki i nieuprzejmy', 'value_defB_POL': False, 'word_POL': u'dzier\u017cymorda', 'word_ENG': u'rainbow'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto bardzo rozs\u0105dnie gospodaruje pieni\u0119dzmi', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Something which repels water and cannot become wet.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Something which is not provable, or perhaps impossible.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo niech\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'dusigrosz', 'word_ENG': u'waterproof'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto sp\u0119dza czas na hulankach', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A device for telling time in an office.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A regular, posted schedule of trains or buses.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto robi innym na z\u0142o\u015b\u0107', 'value_defB_POL': False, 'word_POL': u'hulajdusza', 'word_ENG': u'timetable'}, {'correctENG': 1, 'A_POL': u'kto\u015b sumienny, na kim mo\u017cna polega\u0107', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A dish which is used for old cigarettes.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A metal plate traditionally placed inside an oven.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b chciwy i sk\u0105py, dusigrosz, sknera', 'value_defB_POL': True, 'word_POL': u'liczygrosz', 'word_ENG': u'ashtray'}, {'correctENG': 2, 'A_POL': u'kto\u015b bior\u0105cy bardzo wysokie ceny, zdzierca', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Someone who does not often go to church.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Someone who does extreme sports or risky activities.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b brutalny, kto dopuszcza przemoc fizyczn\u0105', 'value_defB_POL': False, 'word_POL': u'\u0142upisk\xf3ra', 'word_ENG': u'daredevil'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto du\u017co m\xf3wi, gadu\u0142a, papla', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small device used for listening to music.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A small telephone which fits in the ear.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto cz\u0119sto nadu\u017cywa alkoholu; pijak', 'value_defB_POL': True, 'word_POL': u'moczyg\u0119ba', 'word_ENG': u'earphone'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto nie lubi pracowa\u0107, le\u0144', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Clothes storage which is placed in a hallway.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A set of stairs going up or down.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto cz\u0119sto ulega wypadkom, niezdara', 'value_defB_POL': False, 'word_POL': u'obibok', 'word_ENG': u'staircase'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto ma k\u0142opoty z prawem', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small and colorful explosion used for celebrations.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A very successful or popular book for teenagers.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo powoli prowadzi samoch\xf3d', 'value_defB_POL': True, 'word_POL': u'zawalidroga', 'word_ENG': u'firework'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto lubi podr\xf3\u017cowa\u0107 po \u015bwiecie', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A gun which is shot quickly and recklessly.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A photograph which is usually taken very quickly.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b szalony, kto ma wiele pomys\u0142\xf3w', 'value_defB_POL': False, 'word_POL': u'obie\u017cy\u015bwiat', 'word_ENG': u'snapshot'}, {'correctENG': 1, 'A_POL': u'kto\u015b obdzieraj\u0105cy martwe zwierz\u0119ta ze sk\xf3ry', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A picture which is taken with a camera.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A chart which measures light from the sun.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto chce zarobi\u0107 czyim\u015b kosztem', 'value_defB_POL': True, 'word_POL': u'odrzysk\xf3ra', 'word_ENG': u'photograph'}, {'correctENG': 2, 'A_POL': u'kto\u015b my\u015bl\u0105cy jedynie o jedzeniu, \u017car\u0142ok', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A part of the ocean near a volcano.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A long weather pattern of unusually high temperatures.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto pracuje przy wypasie owiec', 'value_defB_POL': False, 'word_POL': u'pasibrzuch', 'word_ENG': u'heatwave'}, {'correctENG': 1, 'A_POL': u'kto\u015b lekkomy\u015blny, kto dzia\u0142a bez zastanowienia', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A place where planes take off and land.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A place where chemicals and gases are traded.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto kiepsko gra na gitarze', 'value_defB_POL': True, 'word_POL': u'szarpidrut', 'word_ENG': u'airport'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto prowadzi zabaw\u0119 na przyj\u0119ciu', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A place where cars are available for hire.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Riding in a car to work with colleagues.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b szybki, kto prowadzi w wy\u015bcigu', 'value_defB_POL': False, 'word_POL': u'wodzirej', 'word_ENG': u'carpool'}, {'correctENG': 1, 'A_POL': u'kto\u015b zblazowany, kto lekcewa\u017cy cudz\u0105 pomoc', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Organized information which is used by a computer.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A guarded compound storing top secret military information.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto wy\u0142udza od innych pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'wydrwigrosz', 'word_ENG': u'database'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto stroni od wydawania pieni\u0119dzy', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'Food which is made for professional race horses.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Ground oats which are mixed with hot water.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b bardzo wychudzony, o szczup\u0142ej sylwetce', 'value_defB_POL': False, 'word_POL': u'sk\u0105pirad\u0142o', 'word_ENG': u'oatmeal'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto zajmuje si\u0119 wycink\u0105 drzew', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u&quot;A person's perspective, opinion, or way of thinking.&quot;, 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A popular sightseeing destination that is often recommended.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b o wielkiej, nadludzkiej sile, olbrzym', 'value_defB_POL': True, 'word_POL': u'wyrwid\u0105b', 'word_ENG': u'viewpoint'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto lubi zabawia\u0107 kobiety, flirciarz', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small organization which arranges temporary work assignments.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A place where artists create and sell objects.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto jest dobrze wychowany, wytworny', 'value_defB_POL': False, 'word_POL': u'bawidamek', 'word_ENG': u'workshop'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto jest dobrze zbudowany, olbrzym', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The number of workers or employees a business has.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'The amount of power an engine can produce.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto ci\u0105gle p\u0142acze, najcz\u0119\u015bciej dziecko', 'value_defB_POL': True, 'word_POL': u'ryczyw\xf3\u0142', 'word_ENG': u'workforce'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto lubi zabawia\u0107 kobiety, flirciarz', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A recommendation about mental health from a psychiatrist.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'People, drugs and jobs in the medical industry.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b blady, chorowity, pozbawiony si\u0142y fizycznej', 'value_defB_POL': False, 'word_POL': u'bawibia\u0142ek', 'word_ENG': u'healthcare'}, {'correctENG': 1, 'A_POL': u'kto\u015b bardzo religijny i bogobojny, bigot', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A small, light computer which can be carried.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A desk which is designed for an armchair.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto stale si\u0119 czym\u015b chwali', 'value_defB_POL': True, 'word_POL': u'chwalib\xf3g', 'word_ENG': u'laptop'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto cz\u0119sto dokucza innym ludziom', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small space where children can play safely.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A colorful pen often used by young children.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b o wielkich, dobrze widocznych z\u0119bach', 'value_defB_POL': False, 'word_POL': u'gryzimol', 'word_ENG': u'playpen'}, {'correctENG': 1, 'A_POL': u'kto\u015b skrupulatny i zawsze dobrze zorganizowany', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'The sandy or rocky area next to a river.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'The estimated number of fish in a river.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto bardzo niech\u0119tnie wydaje pieni\u0105dze', 'value_defB_POL': True, 'word_POL': u'liczymieszek', 'word_ENG': u'riverbank'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto zam\u0119cza innych, cz\u0119sto przynudza', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A large wave which occurs in a storm.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'Shops and restaurants which are near the beach.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b niem\u0105dry, kto nie rozumie wiele', 'value_defB_POL': False, 'word_POL': u'm\u0119czyw\xf3\u0142', 'word_ENG': u'waterfront'}, {'correctENG': 1, 'A_POL': u'kto\u015b kto nigdy nie zdradza tajemnic', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'An exercise machine used for walking indoors.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A device which accurately measures daily distance walked.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b ma\u0142om\xf3wny, kto niech\u0119tnie si\u0119 odzywa', 'value_defB_POL': True, 'word_POL': u'milczymorda', 'word_ENG': u'treadmill'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto bardzo du\u017co si\u0119 przechwala', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'A small boat used for tourists and whale-watchers.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A small town or village near the ocean.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto nie potrzebuje pieni\u0119dzy, pustelnik', 'value_defB_POL': False, 'word_POL': u'chwalibieda', 'word_ENG': u'seaside'}, {'correctENG': 1, 'A_POL': u'kto\u015b bardzo niesamodzielny, uzale\u017cniony od innych', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'A glass window on the front of a car.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'A ceramic plate used on rockets and jets.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b kto wszystkiego si\u0119 boi, tch\xf3rz', 'value_defB_POL': True, 'word_POL': u'trz\u0119siportek', 'word_ENG': u'windshield'}, {'correctENG': 2, 'A_POL': u'kto\u015b kto cz\u0119sto pije du\u017co alkoholu', 'key_defA_ENG': u'left', 'correct_ans_POL': 1, 'defA_ENG': u'The bright lights which tell an airplane where to land.', 'value_defB_ENG': True, 'value_defA_POL': True, 'value_defA_ENG': False, 'defB_ENG': u'A popular or well-known monument or building.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b rubaszny, niezwracaj\u0105cy uwagi na maniery', 'value_defB_POL': False, 'word_POL': u'moczyw\u0105s', 'word_ENG': u'landmark'}, {'correctENG': 1, 'A_POL': u'kto\u015b sprowadzaj\u0105cy innych na z\u0142\u0105 drog', 'key_defA_ENG': u'left', 'correct_ans_POL': 2, 'defA_ENG': u'Wooden decoration on walls and doors in a house.', 'value_defB_ENG': False, 'value_defA_POL': False, 'value_defA_ENG': True, 'defB_ENG': u'Boring work which is also useless or unnecessary.', 'key_defA_POL': u'left', 'key_defB_POL': u'right', 'key_defB_ENG': u'right', 'B_POL': u'kto\u015b \u0142akomy na wszystko, bardzo chciwy', 'value_defB_POL': True, 'word_POL': u'\u0142apidusza', 'word_ENG': u'woodwork'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="trial2"/>
+    <LoopTerminator name="trials_POL"/>
+    <Routine name="instructions_final"/>
+  </Flow>
+</PsychoPy2experiment>

@@ -1,0 +1,744 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.83.04">
+  <Settings>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1024, 768]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="priming_test" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="mask_trial_POL">
+      <TextComponent name="masking1_4">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking1_4" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="primePOLexp">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="primePOLexp" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$prime_exp_POL" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.05" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="masking2_4">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking2_4" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.05" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instructions_POL">
+      <TextComponent name="instruct_POL1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instruct_POL1" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Część angielska eksperymentu dobiegła końca. Dziękujemy!&amp;#10;&amp;#10;Tak jak poprzednio właściwy eksperyment poprzedzi krótka sesja treningowa. &amp;#10;Na ekranie pojawi się seria znaków (&quot;########&quot;), a następnie ciąg liter. Przy pomocy strzałek w LEWO oraz PRAWO prosimy zdecydować, czy litery tworzą słowo w języku polskim. &amp;#10;Jeśli tak, prosimy nacisnąć strzałkę w lewo &lt;-. &amp;#10;Jeśli nie, prosimy nacisnąć strzałkę w prawo. -&gt;.&amp;#10;&amp;#10;Aby przejść do sesji treningowej, prosimy nacisnąć spację.&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="mask_prac_POL">
+      <TextComponent name="masking1_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking1_3" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="primePOL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="primePOL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$prime_exp_POL_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.05" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="masking2_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking2_3" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.05" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="trial_POL">
+      <TextComponent name="trial_quesPOL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="trial_quesPOL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="           Is it a word?&amp;#10;&amp;#10;&lt;- YES                     NO -&gt; " valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <TextComponent name="trial_targetPOL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="trial_targetPOL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$compFull_POL" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="trial_ansPOL">
+        <Param name="correctAns" updates="constant" val="$ans_POL" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="trial_ansPOL" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'left', 'right'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="practice_POL">
+      <TextComponent name="prac_quesPOL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="prac_quesPOL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="           Is it a word?&amp;#10;&amp;#10;&lt;- YES                     NO -&gt; " valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <TextComponent name="prac_targetPOL">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="prac_targetPOL" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$comp_POL_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="prac_ansPOL">
+        <Param name="correctAns" updates="constant" val="$ans_POL_prac" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="prac_ansPOL" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'left', 'right'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="mask">
+      <TextComponent name="masking1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking1" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="primeENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="primeENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$prime_exp_ENG_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.05" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="masking2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.05" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="trial_ENG">
+      <TextComponent name="trial_quesENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="trial_quesENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="           Is it a word?&amp;#10;&amp;#10;&lt;- YES                     NO -&gt; " valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <TextComponent name="trial_targetENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="trial_targetENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$compFull_ENG" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="trial_ansENG">
+        <Param name="correctAns" updates="constant" val="$ans_ENG" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="trial_ansENG" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'left', 'right'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions_ENG_trial">
+      <TextComponent name="instructions_ENG2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instructions_ENG2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="The practice session is over. We will now begin the experiment.&amp;#10;&amp;#10;If you have any questions at this time, please feel free to ask.&amp;#10;&amp;#10;Otherwise, if you are ready, please press SPACE to continue." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="thanks">
+      <TextComponent name="thankyou">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="thankyou" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you! The experiment is over. &amp;#10;&amp;#10;Bardzo dziękujemy za udział w eksperymencie!&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instructions_ENG">
+      <TextComponent name="instruct_ENG1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instruct_ENG1" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Hello! Thank you for agreeing to participate in this study.&amp;#10;&amp;#10;The experiment will begin with a practice session and trials in English, followed by practice and trials in Polish. If you have any questions during the practice sessions, please feel free to ask.&amp;#10;&amp;#10;On the screen, you will see a series of hash marks (&quot;########&quot;), followed by a series of letters. Please use the LEFT and RIGHT arrow keys to indicate whether the letters form a real word in English. &amp;#10;If it is a word, press LEFT &lt;-. If it is not a word, press RIGHT -&gt;.&amp;#10;&amp;#10;If you are ready to continue, please press SPACE." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions_POL_trial">
+      <TextComponent name="instructions_POL_exp">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instructions_POL_exp" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="Sesja treningowa dobiegła końca.&amp;#10;&amp;#10;W przypadku jakichkolwiek wątpliwości, zachęcamy do zadawania pytań.&amp;#10;&amp;#10;Jeżeli wszystko jest jasne, prosimy nacisnąć spację w celu rozpoczęcia eksperymentu.&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="practice_ENG">
+      <TextComponent name="prac_quesENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="prac_quesENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="           Is it a word?&amp;#10;&amp;#10;&lt;- YES                     NO -&gt; " valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+      </TextComponent>
+      <TextComponent name="prac_targetENG">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="prac_targetENG" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$comp_ENG_prac" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="prac_ansENG">
+        <Param name="correctAns" updates="constant" val="$ans_ENG_prac" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="prac_ansENG" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'left', 'right'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="mask_trial_ENG">
+      <TextComponent name="masking1_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking1_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="primeENG_trial">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="primeENG_trial" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$prime_exp_ENG" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.05" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="masking2_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="masking2_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="##########" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0.2]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1.05" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions_ENG"/>
+    <LoopInitiator loopType="TrialHandler" name="practice_EN">
+      <Param name="conditionsFile" updates="None" val="priming_practice.csv" valType="str"/>
+      <Param name="name" updates="None" val="practice_EN" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'comp_ENG_prac': u'underground', 'prime_exp_POL_prac': u'murek', 'prime_exp_ENG_prac': u'sky', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'warta'}, {'comp_ENG_prac': u'wallpaper', 'prime_exp_POL_prac': u'stopa', 'prime_exp_ENG_prac': u'floor', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'noga'}, {'comp_ENG_prac': u'driveway', 'prime_exp_POL_prac': u'marka', 'prime_exp_ENG_prac': u'road', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'auto'}, {'comp_ENG_prac': u'skateboard', 'prime_exp_POL_prac': u'nitka', 'prime_exp_ENG_prac': u'ski', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'ig?a'}, {'comp_ENG_prac': u'cupcake', 'prime_exp_POL_prac': u'obrus', 'prime_exp_ENG_prac': u'bowl', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'talerz'}, {'comp_ENG_prac': u'elentricity', 'prime_exp_POL_prac': u'pubros', 'prime_exp_ENG_prac': u'power', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'sto?ek'}, {'comp_ENG_prac': u'camputer', 'prime_exp_POL_prac': u'remuk', 'prime_exp_ENG_prac': u'laptop', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'konik'}, {'comp_ENG_prac': u'barbage', 'prime_exp_POL_prac': u'ponak', 'prime_exp_ENG_prac': u'bag', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'szachy'}, {'comp_ENG_prac': u'instiration', 'prime_exp_POL_prac': u'bumak', 'prime_exp_ENG_prac': u'wall', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'hamak'}, {'comp_ENG_prac': u'explaration', 'prime_exp_POL_prac': u'jatek', 'prime_exp_ENG_prac': u'question', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'karka'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="mask"/>
+    <Routine name="practice_ENG"/>
+    <LoopTerminator name="practice_EN"/>
+    <Routine name="instructions_ENG_trial"/>
+    <LoopInitiator loopType="TrialHandler" name="trial_EN">
+      <Param name="conditionsFile" updates="None" val="priming_list.csv" valType="str"/>
+      <Param name="name" updates="None" val="trial_EN" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'prime_exp_POL_prac': u'murek', 'prime_compRight_POL': u'suknia', 'ans_POL': u'left', 'compFull_ENG': u'airport', 'comp_POL_prac': u'warta', 'prime_exp_POL': u'podryw', 'prime_compFull_POL': u'podryw', 'prime_compRight_ENG': u'trade', 'ans_ENG': u'left', 'prime_exp_ENG': u'plane', 'prime_compFull_ENG': u'plane', 'compFull_POL': u'bawidamek'}, {'prime_exp_POL_prac': u'stopa', 'prime_compRight_POL': u'palec', 'ans_POL': u'left', 'compFull_ENG': u'babysitter', 'comp_POL_prac': u'noga', 'prime_exp_POL': u'duma', 'prime_compFull_POL': u'duma', 'prime_compRight_ENG': u'chair', 'ans_ENG': u'left', 'prime_exp_ENG': u'parent', 'prime_compFull_ENG': u'parent', 'compFull_POL': u'chwalipi\u0119ta'}, {'prime_exp_POL_prac': u'marka', 'prime_compRight_POL': u'czy\u015bciec', 'ans_POL': u'left', 'compFull_ENG': u'countryside', 'comp_POL_prac': u'auto', 'prime_exp_POL': u'rado\u015b\u0107', 'prime_compFull_POL': u'rado\u015b\u0107', 'prime_compRight_ENG': u'top', 'ans_ENG': u'left', 'prime_exp_ENG': u'top', 'prime_compFull_ENG': u'city', 'compFull_POL': u'hulajdusza'}, {'prime_exp_POL_prac': u'nitka', 'prime_compRight_POL': u'piek\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'daredevil', 'comp_POL_prac': u'ig\u0142a', 'prime_exp_POL': u'nuda', 'prime_compFull_POL': u'nuda', 'prime_compRight_ENG': u'hell', 'ans_ENG': u'left', 'prime_exp_ENG': u'hell', 'prime_compFull_ENG': u'risk', 'compFull_POL': u'j\u0119czydusza'}, {'prime_exp_POL_prac': u'obrus', 'prime_compRight_POL': u'kasza', 'ans_POL': u'left', 'compFull_ENG': u'database', 'comp_POL_prac': u'talerz', 'prime_exp_POL': u'kasza', 'prime_compFull_POL': u'banknot', 'prime_compRight_ENG': u'army', 'ans_ENG': u'left', 'prime_exp_ENG': u'army', 'prime_compFull_ENG': u'computer', 'compFull_POL': u'liczykrupa'}, {'prime_exp_POL_prac': u'pubros', 'prime_compRight_POL': u'rekin', 'ans_POL': u'left', 'compFull_ENG': u'laptop', 'comp_POL_prac': u'sto\u0142ek', 'prime_exp_POL': u'zam\u0119t', 'prime_compFull_POL': u'zam\u0119t', 'prime_compRight_ENG': u'bottom', 'ans_ENG': u'left', 'prime_exp_ENG': u'bottom', 'prime_compFull_ENG': u'computer', 'compFull_POL': u'm\u0105ciwoda'}, {'prime_exp_POL_prac': u'remuk', 'prime_compRight_POL': u'piek\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'nightmare', 'comp_POL_prac': u'konik', 'prime_exp_POL': u'piek\u0142o', 'prime_compFull_POL': u'trudno\u015b\u0107', 'prime_compRight_ENG': u'cow', 'ans_ENG': u'left', 'prime_exp_ENG': u'cow', 'prime_compFull_ENG': u'dream', 'compFull_POL': u'm\u0119czydusza'}, {'prime_exp_POL_prac': u'ponak', 'prime_compRight_POL': u'krowa', 'ans_POL': u'left', 'compFull_ENG': u'paperback', 'comp_POL_prac': u'szachy', 'prime_exp_POL': u'trudno\u015b\u0107', 'prime_compFull_POL': u'trudno\u015b\u0107', 'prime_compRight_ENG': u'neck', 'ans_ENG': u'left', 'prime_exp_ENG': u'book', 'prime_compFull_ENG': u'book', 'compFull_POL': u'm\u0119czyw\xf3\u0142'}, {'prime_exp_POL_prac': u'bumak', 'prime_compRight_POL': u'Ziemia', 'ans_POL': u'left', 'compFull_ENG': u'photograph', 'comp_POL_prac': u'hamak', 'prime_exp_POL': u'podr\xf3\u017c', 'prime_compFull_POL': u'podr\xf3\u017c', 'prime_compRight_ENG': u'chart', 'ans_ENG': u'left', 'prime_exp_ENG': u'painting', 'prime_compFull_ENG': u'painting', 'compFull_POL': u'obie\u017cy\u015bwiat'}, {'prime_exp_POL_prac': u'jatek', 'prime_compRight_POL': u'cia\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'rainbow', 'comp_POL_prac': u'karka', 'prime_exp_POL': u'cia\u0142o', 'prime_compFull_POL': u'oszust', 'prime_compRight_ENG': u'sword', 'ans_ENG': u'left', 'prime_exp_ENG': u'sword', 'prime_compFull_ENG': u'color', 'compFull_POL': u'odrzysk\xf3ra'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'kropla', 'ans_POL': u'left', 'compFull_ENG': u'riverbank', 'comp_POL_prac': nan, 'prime_exp_POL': u'kropla', 'prime_compFull_POL': u'k\u0142amstwo', 'prime_compRight_ENG': u'money', 'ans_ENG': u'left', 'prime_exp_ENG': u'money', 'prime_compFull_ENG': u'sand', 'compFull_POL': u'paliwoda'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'plecy', 'ans_POL': u'left', 'compFull_ENG': u'screwdriver', 'comp_POL_prac': nan, 'prime_exp_POL': u'grubas', 'prime_compFull_POL': u'grubas', 'prime_compRight_ENG': u'car', 'ans_ENG': u'left', 'prime_exp_ENG': u'hammer', 'prime_compFull_ENG': u'hammer', 'compFull_POL': u'pasibrzuch'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'burza', 'ans_POL': u'left', 'compFull_ENG': u'seaside', 'comp_POL_prac': nan, 'prime_exp_POL': u'burza', 'prime_compFull_POL': u'szybko\u015b\u0107', 'prime_compRight_ENG': u'top', 'ans_ENG': u'left', 'prime_exp_ENG': u'vacation', 'prime_compFull_ENG': u'vacation', 'compFull_POL': u'p\u0119dziwiatr'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'pole', 'ans_POL': u'left', 'compFull_ENG': u'snapshot', 'comp_POL_prac': nan, 'prime_exp_POL': u'pieni\u0105dz', 'prime_compFull_POL': u'pieni\u0105dz', 'prime_compRight_ENG': u'gun', 'ans_ENG': u'left', 'prime_exp_ENG': u'gun', 'prime_compFull_ENG': u'photo', 'compFull_POL': u'sk\u0105pirad\u0142o'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'nici', 'ans_POL': u'left', 'compFull_ENG': u'soundtrack', 'comp_POL_prac': nan, 'prime_exp_POL': u'nici', 'prime_compFull_POL': u'muzyk', 'prime_compRight_ENG': u'race', 'ans_ENG': u'left', 'prime_exp_ENG': u'race', 'prime_compFull_ENG': u'music', 'compFull_POL': u'szarpidrut'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'spodnie', 'ans_POL': u'left', 'compFull_ENG': u'staircase', 'comp_POL_prac': nan, 'prime_exp_POL': u'spodnie', 'prime_compFull_POL': u'trwoga', 'prime_compRight_ENG': u'box', 'ans_ENG': u'left', 'prime_exp_ENG': u'box', 'prime_compFull_ENG': u'hallway', 'compFull_POL': u'trz\u0119siportek'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'wzg\xf3rze', 'ans_POL': u'left', 'compFull_ENG': u'timetable', 'comp_POL_prac': nan, 'prime_exp_POL': u'wzg\xf3rze', 'prime_compFull_POL': u'si\u0142acz', 'prime_compRight_ENG': u'chair', 'ans_ENG': u'left', 'prime_exp_ENG': u'chair', 'prime_compFull_ENG': u'train', 'compFull_POL': u'walig\xf3ra'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'palec', 'ans_POL': u'left', 'compFull_ENG': u'viewpoint', 'comp_POL_prac': nan, 'prime_exp_POL': u'niepok\xf3j', 'prime_compFull_POL': u'niepok\xf3j', 'prime_compRight_ENG': u'line', 'ans_ENG': u'left', 'prime_exp_ENG': u'line', 'prime_compFull_ENG': u'idea', 'compFull_POL': u'wiercipi\u0119ta'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'laska', 'ans_POL': u'left', 'compFull_ENG': u'waterproof', 'comp_POL_prac': nan, 'prime_exp_POL': u'tu\u0142acz', 'prime_compFull_POL': u'tu\u0142acz', 'prime_compRight_ENG': u'truth', 'ans_ENG': u'left', 'prime_exp_ENG': u'jacket', 'prime_compFull_ENG': u'jacket', 'compFull_POL': u'w\u0142\xf3czykij'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'korze\u0144', 'ans_POL': u'left', 'compFull_ENG': u'woodwork', 'comp_POL_prac': nan, 'prime_exp_POL': u'korze\u0144', 'prime_compFull_POL': u'si\u0142acz', 'prime_compRight_ENG': u'job', 'ans_ENG': u'left', 'prime_exp_ENG': u'job', 'prime_compFull_ENG': u'hammer', 'compFull_POL': u'wyrwid\u0105b'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'oberation', 'comp_POL_prac': nan, 'prime_exp_POL': u'kaczka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'doctor', 'prime_compFull_ENG': nan, 'compFull_POL': u'wajwa'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'inspeltion', 'comp_POL_prac': nan, 'prime_exp_POL': u'bambus', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'check', 'prime_compFull_ENG': nan, 'compFull_POL': u'knezik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'helicomter', 'comp_POL_prac': nan, 'prime_exp_POL': u'belka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'plane', 'prime_compFull_ENG': nan, 'compFull_POL': u'czaba'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'jepdyfish', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u0142y\u017cka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'tychwa'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'factomy', 'comp_POL_prac': nan, 'prime_exp_POL': u'miska', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'shop', 'prime_compFull_ENG': nan, 'compFull_POL': u'lobakt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'oplosite', 'comp_POL_prac': nan, 'prime_exp_POL': u'piasek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'bomb', 'prime_compFull_ENG': nan, 'compFull_POL': u'makras'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'tocumant', 'comp_POL_prac': nan, 'prime_exp_POL': u'bajka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'paper', 'prime_compFull_ENG': nan, 'compFull_POL': u'belik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'antronaut', 'comp_POL_prac': nan, 'prime_exp_POL': u'szafa', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'pen', 'prime_compFull_ENG': nan, 'compFull_POL': u'szabrys'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'darection', 'comp_POL_prac': nan, 'prime_exp_POL': u'nocnik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'memok'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'inpasion', 'comp_POL_prac': nan, 'prime_exp_POL': u'domek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'question', 'prime_compFull_ENG': nan, 'compFull_POL': u'orbik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'chindren', 'comp_POL_prac': nan, 'prime_exp_POL': u'balkon', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'mother', 'prime_compFull_ENG': nan, 'compFull_POL': u'dukalt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'edectric', 'comp_POL_prac': nan, 'prime_exp_POL': u'nuda', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'light', 'prime_compFull_ENG': nan, 'compFull_POL': u'presak'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'monitod', 'comp_POL_prac': nan, 'prime_exp_POL': u'stojak', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'computer', 'prime_compFull_ENG': nan, 'compFull_POL': u'bekor'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'firection', 'comp_POL_prac': nan, 'prime_exp_POL': u'barka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'left', 'prime_compFull_ENG': nan, 'compFull_POL': u'kapik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'combition', 'comp_POL_prac': nan, 'prime_exp_POL': u'ciotka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'air', 'prime_compFull_ENG': nan, 'compFull_POL': u'bukas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'pressurt', 'comp_POL_prac': nan, 'prime_exp_POL': u'szalik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'pipe', 'prime_compFull_ENG': nan, 'compFull_POL': u'klektet'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'abvance', 'comp_POL_prac': nan, 'prime_exp_POL': u'rogal', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'ahead', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017cubar'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'ragister', 'comp_POL_prac': nan, 'prime_exp_POL': u's\u0142oik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'money', 'prime_compFull_ENG': nan, 'compFull_POL': u'agot'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'financt', 'comp_POL_prac': nan, 'prime_exp_POL': u'stanik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'bank', 'prime_compFull_ENG': nan, 'compFull_POL': u'germer'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'redigion', 'comp_POL_prac': nan, 'prime_exp_POL': u'torba', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'church', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017carka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'anspire', 'comp_POL_prac': nan, 'prime_exp_POL': u'czaszka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'king', 'prime_compFull_ENG': nan, 'compFull_POL': u'pektas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'blavour', 'comp_POL_prac': nan, 'prime_exp_POL': u'nuta', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'salt', 'prime_compFull_ENG': nan, 'compFull_POL': u'ukalt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'fadness', 'comp_POL_prac': nan, 'prime_exp_POL': u'fartuch', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'happy', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017carmo'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'plastey', 'comp_POL_prac': nan, 'prime_exp_POL': u'szafa', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'green', 'prime_compFull_ENG': nan, 'compFull_POL': u'basat'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'plitcher', 'comp_POL_prac': nan, 'prime_exp_POL': u'beczka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'milk', 'prime_compFull_ENG': nan, 'compFull_POL': u'ginka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'prottle', 'comp_POL_prac': nan, 'prime_exp_POL': u'ulga', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'lektas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'swoater', 'comp_POL_prac': nan, 'prime_exp_POL': u'aspekt', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'shirt', 'prime_compFull_ENG': nan, 'compFull_POL': u'sinek'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'motebook', 'comp_POL_prac': nan, 'prime_exp_POL': u'murek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'paper', 'prime_compFull_ENG': nan, 'compFull_POL': u'radmo'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'tandle', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u0142y\u017cka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'fire', 'prime_compFull_ENG': nan, 'compFull_POL': u'ateks'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'meather', 'comp_POL_prac': nan, 'prime_exp_POL': u'd\u017cungla', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'white', 'prime_compFull_ENG': nan, 'compFull_POL': u'birka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'flunder', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u017ceton', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'rain', 'prime_compFull_ENG': nan, 'compFull_POL': u'salmo'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="mask_trial_ENG"/>
+    <Routine name="trial_ENG"/>
+    <LoopTerminator name="trial_EN"/>
+    <Routine name="instructions_POL"/>
+    <LoopInitiator loopType="TrialHandler" name="prac_PL">
+      <Param name="conditionsFile" updates="None" val="priming_practice.csv" valType="str"/>
+      <Param name="name" updates="None" val="prac_PL" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'prime_exp_POL_prac': u'murek', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'warta', 'comp_ENG_prac': u'underground', 'prime_exp_ENG_prac': u'sky', 'ans_POL_prac': u'left'}, {'prime_exp_POL_prac': u'stopa', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'noga', 'comp_ENG_prac': u'wallpaper', 'prime_exp_ENG_prac': u'floor', 'ans_POL_prac': u'left'}, {'prime_exp_POL_prac': u'marka', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'auto', 'comp_ENG_prac': u'driveway', 'prime_exp_ENG_prac': u'road', 'ans_POL_prac': u'left'}, {'prime_exp_POL_prac': u'nitka', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'ig\u0142a', 'comp_ENG_prac': u'skateboard', 'prime_exp_ENG_prac': u'ski', 'ans_POL_prac': u'left'}, {'prime_exp_POL_prac': u'obrus', 'ans_ENG_prac': u'left', 'comp_POL_prac': u'talerz', 'comp_ENG_prac': u'cupcake', 'prime_exp_ENG_prac': u'bowl', 'ans_POL_prac': u'left'}, {'prime_exp_POL_prac': u'pubros', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'sto\u0142ek', 'comp_ENG_prac': u'elentricity', 'prime_exp_ENG_prac': u'power', 'ans_POL_prac': u'right'}, {'prime_exp_POL_prac': u'remuk', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'konik', 'comp_ENG_prac': u'camputer', 'prime_exp_ENG_prac': u'laptop', 'ans_POL_prac': u'right'}, {'prime_exp_POL_prac': u'ponak', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'szachy', 'comp_ENG_prac': u'barbage', 'prime_exp_ENG_prac': u'bag', 'ans_POL_prac': u'right'}, {'prime_exp_POL_prac': u'bumak', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'hamak', 'comp_ENG_prac': u'instiration', 'prime_exp_ENG_prac': u'wall', 'ans_POL_prac': u'right'}, {'prime_exp_POL_prac': u'jatek', 'ans_ENG_prac': u'right', 'comp_POL_prac': u'karka', 'comp_ENG_prac': u'explaration', 'prime_exp_ENG_prac': u'question', 'ans_POL_prac': u'right'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="mask_prac_POL"/>
+    <Routine name="practice_POL"/>
+    <LoopTerminator name="prac_PL"/>
+    <Routine name="instructions_POL_trial"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_PL">
+      <Param name="conditionsFile" updates="None" val="priming_list.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials_PL" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'prime_exp_POL_prac': u'murek', 'prime_compRight_POL': u'suknia', 'ans_POL': u'left', 'compFull_ENG': u'airport', 'comp_POL_prac': u'warta', 'prime_exp_POL': u'podryw', 'prime_compFull_POL': u'podryw', 'prime_compRight_ENG': u'trade', 'ans_ENG': u'left', 'prime_exp_ENG': u'plane', 'prime_compFull_ENG': u'plane', 'compFull_POL': u'bawidamek'}, {'prime_exp_POL_prac': u'stopa', 'prime_compRight_POL': u'palec', 'ans_POL': u'left', 'compFull_ENG': u'babysitter', 'comp_POL_prac': u'noga', 'prime_exp_POL': u'duma', 'prime_compFull_POL': u'duma', 'prime_compRight_ENG': u'chair', 'ans_ENG': u'left', 'prime_exp_ENG': u'parent', 'prime_compFull_ENG': u'parent', 'compFull_POL': u'chwalipi\u0119ta'}, {'prime_exp_POL_prac': u'marka', 'prime_compRight_POL': u'czy\u015bciec', 'ans_POL': u'left', 'compFull_ENG': u'countryside', 'comp_POL_prac': u'auto', 'prime_exp_POL': u'rado\u015b\u0107', 'prime_compFull_POL': u'rado\u015b\u0107', 'prime_compRight_ENG': u'top', 'ans_ENG': u'left', 'prime_exp_ENG': u'top', 'prime_compFull_ENG': u'city', 'compFull_POL': u'hulajdusza'}, {'prime_exp_POL_prac': u'nitka', 'prime_compRight_POL': u'piek\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'daredevil', 'comp_POL_prac': u'ig\u0142a', 'prime_exp_POL': u'nuda', 'prime_compFull_POL': u'nuda', 'prime_compRight_ENG': u'hell', 'ans_ENG': u'left', 'prime_exp_ENG': u'hell', 'prime_compFull_ENG': u'risk', 'compFull_POL': u'j\u0119czydusza'}, {'prime_exp_POL_prac': u'obrus', 'prime_compRight_POL': u'kasza', 'ans_POL': u'left', 'compFull_ENG': u'database', 'comp_POL_prac': u'talerz', 'prime_exp_POL': u'kasza', 'prime_compFull_POL': u'banknot', 'prime_compRight_ENG': u'army', 'ans_ENG': u'left', 'prime_exp_ENG': u'army', 'prime_compFull_ENG': u'computer', 'compFull_POL': u'liczykrupa'}, {'prime_exp_POL_prac': u'pubros', 'prime_compRight_POL': u'rekin', 'ans_POL': u'left', 'compFull_ENG': u'laptop', 'comp_POL_prac': u'sto\u0142ek', 'prime_exp_POL': u'zam\u0119t', 'prime_compFull_POL': u'zam\u0119t', 'prime_compRight_ENG': u'bottom', 'ans_ENG': u'left', 'prime_exp_ENG': u'bottom', 'prime_compFull_ENG': u'computer', 'compFull_POL': u'm\u0105ciwoda'}, {'prime_exp_POL_prac': u'remuk', 'prime_compRight_POL': u'piek\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'nightmare', 'comp_POL_prac': u'konik', 'prime_exp_POL': u'piek\u0142o', 'prime_compFull_POL': u'trudno\u015b\u0107', 'prime_compRight_ENG': u'cow', 'ans_ENG': u'left', 'prime_exp_ENG': u'cow', 'prime_compFull_ENG': u'dream', 'compFull_POL': u'm\u0119czydusza'}, {'prime_exp_POL_prac': u'ponak', 'prime_compRight_POL': u'krowa', 'ans_POL': u'left', 'compFull_ENG': u'paperback', 'comp_POL_prac': u'szachy', 'prime_exp_POL': u'trudno\u015b\u0107', 'prime_compFull_POL': u'trudno\u015b\u0107', 'prime_compRight_ENG': u'neck', 'ans_ENG': u'left', 'prime_exp_ENG': u'book', 'prime_compFull_ENG': u'book', 'compFull_POL': u'm\u0119czyw\xf3\u0142'}, {'prime_exp_POL_prac': u'bumak', 'prime_compRight_POL': u'Ziemia', 'ans_POL': u'left', 'compFull_ENG': u'photograph', 'comp_POL_prac': u'hamak', 'prime_exp_POL': u'podr\xf3\u017c', 'prime_compFull_POL': u'podr\xf3\u017c', 'prime_compRight_ENG': u'chart', 'ans_ENG': u'left', 'prime_exp_ENG': u'painting', 'prime_compFull_ENG': u'painting', 'compFull_POL': u'obie\u017cy\u015bwiat'}, {'prime_exp_POL_prac': u'jatek', 'prime_compRight_POL': u'cia\u0142o', 'ans_POL': u'left', 'compFull_ENG': u'rainbow', 'comp_POL_prac': u'karka', 'prime_exp_POL': u'cia\u0142o', 'prime_compFull_POL': u'oszust', 'prime_compRight_ENG': u'sword', 'ans_ENG': u'left', 'prime_exp_ENG': u'sword', 'prime_compFull_ENG': u'color', 'compFull_POL': u'odrzysk\xf3ra'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'kropla', 'ans_POL': u'left', 'compFull_ENG': u'riverbank', 'comp_POL_prac': nan, 'prime_exp_POL': u'kropla', 'prime_compFull_POL': u'k\u0142amstwo', 'prime_compRight_ENG': u'money', 'ans_ENG': u'left', 'prime_exp_ENG': u'money', 'prime_compFull_ENG': u'sand', 'compFull_POL': u'paliwoda'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'plecy', 'ans_POL': u'left', 'compFull_ENG': u'screwdriver', 'comp_POL_prac': nan, 'prime_exp_POL': u'grubas', 'prime_compFull_POL': u'grubas', 'prime_compRight_ENG': u'car', 'ans_ENG': u'left', 'prime_exp_ENG': u'hammer', 'prime_compFull_ENG': u'hammer', 'compFull_POL': u'pasibrzuch'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'burza', 'ans_POL': u'left', 'compFull_ENG': u'seaside', 'comp_POL_prac': nan, 'prime_exp_POL': u'burza', 'prime_compFull_POL': u'szybko\u015b\u0107', 'prime_compRight_ENG': u'top', 'ans_ENG': u'left', 'prime_exp_ENG': u'vacation', 'prime_compFull_ENG': u'vacation', 'compFull_POL': u'p\u0119dziwiatr'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'pole', 'ans_POL': u'left', 'compFull_ENG': u'snapshot', 'comp_POL_prac': nan, 'prime_exp_POL': u'pieni\u0105dz', 'prime_compFull_POL': u'pieni\u0105dz', 'prime_compRight_ENG': u'gun', 'ans_ENG': u'left', 'prime_exp_ENG': u'gun', 'prime_compFull_ENG': u'photo', 'compFull_POL': u'sk\u0105pirad\u0142o'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'nici', 'ans_POL': u'left', 'compFull_ENG': u'soundtrack', 'comp_POL_prac': nan, 'prime_exp_POL': u'nici', 'prime_compFull_POL': u'muzyk', 'prime_compRight_ENG': u'race', 'ans_ENG': u'left', 'prime_exp_ENG': u'race', 'prime_compFull_ENG': u'music', 'compFull_POL': u'szarpidrut'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'spodnie', 'ans_POL': u'left', 'compFull_ENG': u'staircase', 'comp_POL_prac': nan, 'prime_exp_POL': u'spodnie', 'prime_compFull_POL': u'trwoga', 'prime_compRight_ENG': u'box', 'ans_ENG': u'left', 'prime_exp_ENG': u'box', 'prime_compFull_ENG': u'hallway', 'compFull_POL': u'trz\u0119siportek'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'wzg\xf3rze', 'ans_POL': u'left', 'compFull_ENG': u'timetable', 'comp_POL_prac': nan, 'prime_exp_POL': u'wzg\xf3rze', 'prime_compFull_POL': u'si\u0142acz', 'prime_compRight_ENG': u'chair', 'ans_ENG': u'left', 'prime_exp_ENG': u'chair', 'prime_compFull_ENG': u'train', 'compFull_POL': u'walig\xf3ra'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'palec', 'ans_POL': u'left', 'compFull_ENG': u'viewpoint', 'comp_POL_prac': nan, 'prime_exp_POL': u'niepok\xf3j', 'prime_compFull_POL': u'niepok\xf3j', 'prime_compRight_ENG': u'line', 'ans_ENG': u'left', 'prime_exp_ENG': u'line', 'prime_compFull_ENG': u'idea', 'compFull_POL': u'wiercipi\u0119ta'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'laska', 'ans_POL': u'left', 'compFull_ENG': u'waterproof', 'comp_POL_prac': nan, 'prime_exp_POL': u'tu\u0142acz', 'prime_compFull_POL': u'tu\u0142acz', 'prime_compRight_ENG': u'truth', 'ans_ENG': u'left', 'prime_exp_ENG': u'jacket', 'prime_compFull_ENG': u'jacket', 'compFull_POL': u'w\u0142\xf3czykij'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': u'korze\u0144', 'ans_POL': u'left', 'compFull_ENG': u'woodwork', 'comp_POL_prac': nan, 'prime_exp_POL': u'korze\u0144', 'prime_compFull_POL': u'si\u0142acz', 'prime_compRight_ENG': u'job', 'ans_ENG': u'left', 'prime_exp_ENG': u'job', 'prime_compFull_ENG': u'hammer', 'compFull_POL': u'wyrwid\u0105b'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'oberation', 'comp_POL_prac': nan, 'prime_exp_POL': u'kaczka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'doctor', 'prime_compFull_ENG': nan, 'compFull_POL': u'wajwa'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'inspeltion', 'comp_POL_prac': nan, 'prime_exp_POL': u'bambus', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'check', 'prime_compFull_ENG': nan, 'compFull_POL': u'knezik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'helicomter', 'comp_POL_prac': nan, 'prime_exp_POL': u'belka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'plane', 'prime_compFull_ENG': nan, 'compFull_POL': u'czaba'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'jepdyfish', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u0142y\u017cka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'tychwa'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'factomy', 'comp_POL_prac': nan, 'prime_exp_POL': u'miska', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'shop', 'prime_compFull_ENG': nan, 'compFull_POL': u'lobakt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'oplosite', 'comp_POL_prac': nan, 'prime_exp_POL': u'piasek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'bomb', 'prime_compFull_ENG': nan, 'compFull_POL': u'makras'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'tocumant', 'comp_POL_prac': nan, 'prime_exp_POL': u'bajka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'paper', 'prime_compFull_ENG': nan, 'compFull_POL': u'belik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'antronaut', 'comp_POL_prac': nan, 'prime_exp_POL': u'szafa', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'pen', 'prime_compFull_ENG': nan, 'compFull_POL': u'szabrys'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'darection', 'comp_POL_prac': nan, 'prime_exp_POL': u'nocnik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'memok'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'inpasion', 'comp_POL_prac': nan, 'prime_exp_POL': u'domek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'question', 'prime_compFull_ENG': nan, 'compFull_POL': u'orbik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'chindren', 'comp_POL_prac': nan, 'prime_exp_POL': u'balkon', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'mother', 'prime_compFull_ENG': nan, 'compFull_POL': u'dukalt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'edectric', 'comp_POL_prac': nan, 'prime_exp_POL': u'nuda', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'light', 'prime_compFull_ENG': nan, 'compFull_POL': u'presak'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'monitod', 'comp_POL_prac': nan, 'prime_exp_POL': u'stojak', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'computer', 'prime_compFull_ENG': nan, 'compFull_POL': u'bekor'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'firection', 'comp_POL_prac': nan, 'prime_exp_POL': u'barka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'left', 'prime_compFull_ENG': nan, 'compFull_POL': u'kapik'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'combition', 'comp_POL_prac': nan, 'prime_exp_POL': u'ciotka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'air', 'prime_compFull_ENG': nan, 'compFull_POL': u'bukas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'pressurt', 'comp_POL_prac': nan, 'prime_exp_POL': u'szalik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'pipe', 'prime_compFull_ENG': nan, 'compFull_POL': u'klektet'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'abvance', 'comp_POL_prac': nan, 'prime_exp_POL': u'rogal', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'ahead', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017cubar'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'ragister', 'comp_POL_prac': nan, 'prime_exp_POL': u's\u0142oik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'money', 'prime_compFull_ENG': nan, 'compFull_POL': u'agot'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'financt', 'comp_POL_prac': nan, 'prime_exp_POL': u'stanik', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'bank', 'prime_compFull_ENG': nan, 'compFull_POL': u'germer'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'redigion', 'comp_POL_prac': nan, 'prime_exp_POL': u'torba', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'church', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017carka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'anspire', 'comp_POL_prac': nan, 'prime_exp_POL': u'czaszka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'king', 'prime_compFull_ENG': nan, 'compFull_POL': u'pektas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'blavour', 'comp_POL_prac': nan, 'prime_exp_POL': u'nuta', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'salt', 'prime_compFull_ENG': nan, 'compFull_POL': u'ukalt'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'fadness', 'comp_POL_prac': nan, 'prime_exp_POL': u'fartuch', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'happy', 'prime_compFull_ENG': nan, 'compFull_POL': u'\u017carmo'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'plastey', 'comp_POL_prac': nan, 'prime_exp_POL': u'szafa', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'green', 'prime_compFull_ENG': nan, 'compFull_POL': u'basat'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'plitcher', 'comp_POL_prac': nan, 'prime_exp_POL': u'beczka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'milk', 'prime_compFull_ENG': nan, 'compFull_POL': u'ginka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'prottle', 'comp_POL_prac': nan, 'prime_exp_POL': u'ulga', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'car', 'prime_compFull_ENG': nan, 'compFull_POL': u'lektas'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'swoater', 'comp_POL_prac': nan, 'prime_exp_POL': u'aspekt', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'shirt', 'prime_compFull_ENG': nan, 'compFull_POL': u'sinek'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'motebook', 'comp_POL_prac': nan, 'prime_exp_POL': u'murek', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'paper', 'prime_compFull_ENG': nan, 'compFull_POL': u'radmo'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'tandle', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u0142y\u017cka', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'fire', 'prime_compFull_ENG': nan, 'compFull_POL': u'ateks'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'meather', 'comp_POL_prac': nan, 'prime_exp_POL': u'd\u017cungla', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'white', 'prime_compFull_ENG': nan, 'compFull_POL': u'birka'}, {'prime_exp_POL_prac': nan, 'prime_compRight_POL': nan, 'ans_POL': u'right', 'compFull_ENG': u'flunder', 'comp_POL_prac': nan, 'prime_exp_POL': u'\u017ceton', 'prime_compFull_POL': nan, 'prime_compRight_ENG': nan, 'ans_ENG': u'right', 'prime_exp_ENG': u'rain', 'prime_compFull_ENG': nan, 'compFull_POL': u'salmo'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="mask_trial_POL"/>
+    <Routine name="trial_POL"/>
+    <LoopTerminator name="trials_PL"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>
